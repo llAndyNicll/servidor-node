@@ -17,6 +17,7 @@ router.post(
     check( 'name', 'El nombre es necesario' ).not().isEmpty(),
     check( 'lastName', 'El apellido es necesario' ).not().isEmpty(),
     check( 'emailAddress', 'El correo electrónico es necesario' ).isEmail(),
+    check( 'phone', 'El teléfono es necesario' ).not().isEmpty(),
     check( 'subject', 'El asunto es necesario' ).not().isEmpty(),
     check( 'message', 'El mensaje es necesario' ).not().isEmpty(),
     validateFields

@@ -12,6 +12,7 @@ const setUpEmailTemplateService = async ( req: Request ) => {
     name,
     lastName,
     emailAddress,
+    phone,
     subject,
     message
   } = req.body;
@@ -23,6 +24,7 @@ const setUpEmailTemplateService = async ( req: Request ) => {
     template = template.replace( '{{name}}', name )
       .replace( '{{lastName}}', lastName )
       .replace( '{{emailAddress}}', emailAddress )
+      .replace( '{{phone}}', phone )
       .replace( '{{subject}}', subject )
       .replace( '{{message}}', message )
 
