@@ -18,13 +18,14 @@ const path_1 = __importDefault(require("path"));
 // Utils
 const utils_1 = require("../../../utils");
 const setUpEmailTemplateService = (req) => __awaiter(void 0, void 0, void 0, function* () {
-    const { name, lastName, emailAddress, subject, message } = req.body;
+    const { name, lastName, emailAddress, phone, subject, message } = req.body;
     try {
         const templatePath = path_1.default.join(process.cwd(), 'email', 'emailTemplate.html');
         let template = fs_1.default.readFileSync(templatePath, 'utf8');
         template = template.replace('{{name}}', name)
             .replace('{{lastName}}', lastName)
             .replace('{{emailAddress}}', emailAddress)
+            .replace('{{phone}}', phone)
             .replace('{{subject}}', subject)
             .replace('{{message}}', message);
         return {

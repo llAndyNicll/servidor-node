@@ -14,6 +14,7 @@ router.post('/contact', [
     (0, express_validator_1.check)('name', 'El nombre es necesario').not().isEmpty(),
     (0, express_validator_1.check)('lastName', 'El apellido es necesario').not().isEmpty(),
     (0, express_validator_1.check)('emailAddress', 'El correo electrónico es necesario').isEmail(),
+    (0, express_validator_1.check)('phone', 'El teléfono es necesario').not().isEmpty(),
     (0, express_validator_1.check)('subject', 'El asunto es necesario').not().isEmpty(),
     (0, express_validator_1.check)('message', 'El mensaje es necesario').not().isEmpty(),
     middlewares_1.validateFields
