@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email de contacto</title>
 </head>
-<body style="font-family: 'Open Sans', sans-serif; background-color: #f4f4f4; margin: 0; padding: 0;">
+<body style="font-family: 'Open Sans', sans-serif; background-color: #f4f4f4; margin: 10px; padding: 10px;">
     <table width="100%" border="0" cellspacing="0" cellpadding="0" style="max-width: 500px; margin: 40px auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
         <tr>
             <td style="background: #000046; color: #ffffff; text-align: center; padding: 20px 0; font-size: 22px;">
@@ -23,17 +23,17 @@
 
 
                 <div class="content">
-                  <div class="label">De:</div>
-                  <div class="value">{{name}} {{lastName}} &lt;{{emailAddress}}&gt;</div>
+                  <div style="color:rgb(0, 231, 231)">De:</div>
+                  <div style="margin-bottom:10px">{{name}} {{lastName}} &lt;{{emailAddress}}&gt;</div>
 
-                  <div class="label">Teléfono:</div>
-                  <div class="value">{{phone}}</div>
+                  <div style="color:rgb(0, 231, 231)">Teléfono:</div>
+                  <div style="margin-bottom:10px">{{phone}}</div>
 
-                  <div class="label">Asunto:</div>
-                  <div class="value">{{subject}}</div>
+                  <div style="color:rgb(0, 231, 231)">Asunto:</div>
+                  <div style="margin-bottom:10px">{{subject}}</div>
 
-                  <div class="label">Mensaje:</div>
-                  <div class="value">{{message}}</div>
+                  <div style="color:rgb(0, 231, 231)">Mensaje:</div>
+                  <div style="margin-bottom:10px">{{message}}</div>
 
                 </div>
             </td>
